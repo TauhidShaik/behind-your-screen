@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080d19">
+<title>Behind Your Screen | Privacy in the Digital Age</title>
+<style>
+:root{--bg:#080d19;--panel:#101a2b;--panel2:#142238;--ink:#eef5ff;--muted:#9aabc2;--cyan:#58e1e8;--blue:#7d9cff;--line:rgba(160,190,225,.15);--glow:0 0 35px rgba(63,210,230,.14)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 78% 0%,#142b43 0,transparent 34%),var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;gap:11px;align-items:center;font-weight:800;letter-spacing:.06em}.brand-mark{width:35px;height:35px;border-radius:11px;background:linear-gradient(135deg,var(--cyan),var(--blue));display:grid;place-items:center;color:#07111d;font-weight:900;box-shadow:0 0 24px #58e1e844}.navlinks{display:flex;gap:25px;color:#c1cee0;font-size:13px}.navlinks a:hover{color:var(--cyan)}.nav-cta,.btn{border:1px solid rgba(88,225,232,.45);background:linear-gradient(135deg,#173a4b,#172b4b);color:#eaffff;padding:11px 17px;border-radius:12px;font-weight:700;box-shadow:var(--glow);transition:.2s}.btn:hover,.nav-cta:hover{transform:translateY(-2px);border-color:var(--cyan)}.btn.primary{background:linear-gradient(120deg,#61e6e5,#8ea9ff);color:#08121f;border:0}.hero{min-height:650px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:38px;padding:70px 0 85px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--cyan);font-size:11px;font-weight:800;letter-spacing:.19em;text-transform:uppercase}.dot{width:7px;height:7px;background:var(--cyan);border-radius:50%;box-shadow:0 0 12px var(--cyan)}h1{font-size:clamp(48px,7vw,86px);line-height:.99;letter-spacing:-.065em;margin:22px 0}.gradient{background:linear-gradient(100deg,#f2f8ff 10%,#6ee5e8 58%,#9aaeff);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{max-width:520px;color:var(--muted);font-size:17px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.micro{margin-top:22px;color:#72849d;font-size:12px}.visual{height:440px;position:relative;display:grid;place-items:center}.orbit{position:absolute;border:1px solid rgba(88,225,232,.19);border-radius:50%;animation:spin 28s linear infinite}.orbit.one{width:370px;height:370px}.orbit.two{width:290px;height:290px;animation-direction:reverse;animation-duration:22s}.orbit:before{content:"";position:absolute;width:8px;height:8px;border-radius:50%;background:var(--cyan);top:18%;left:10%;box-shadow:0 0 20px var(--cyan)}@keyframes spin{to{transform:rotate(360deg)}}.core{width:205px;height:205px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 40% 35%,#27566b,#12243b 65%,#0c1424);border:1px solid #6ce5e877;box-shadow:0 0 70px #4cdbe833,inset 0 0 35px #65dce522;position:relative}.core svg{width:105px;filter:drop-shadow(0 0 15px #61e9ed)}.float{position:absolute;padding:12px 15px;background:#101c2ddd;border:1px solid var(--line);border-radius:14px;backdrop-filter:blur(12px);font-size:12px;color:#c9d7e8;box-shadow:var(--glow)}.float b{display:block;color:var(--cyan);font-size:14px}.f1{top:55px;left:0}.f2{right:0;top:110px}.f3{bottom:65px;left:15px}.f4{bottom:40px;right:10px}.section{padding:88px 0;border-top:1px solid var(--line)}.section-head{max-width:650px;margin-bottom:34px}.kicker{font-size:11px;color:var(--cyan);letter-spacing:.18em;font-weight:800;text-transform:uppercase}.section h2{font-size:clamp(30px,4vw,48px);line-height:1.08;letter-spacing:-.04em;margin:12px 0}.section-head p,.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(145deg,rgba(20,34,56,.92),rgba(12,21,36,.92));border:1px solid var(--line);border-radius:20px;padding:23px;min-height:210px;transition:.25s;position:relative;overflow:hidden}.card:hover{transform:translateY(-5px);border-color:#58e1e866;box-shadow:var(--glow)}.num{color:var(--cyan);font-size:11px;letter-spacing:.15em;font-weight:800}.card h3{font-size:19px;margin:18px 0 8px}.card p{font-size:13px;color:var(--muted);margin:0}.iconbox{width:43px;height:43px;border-radius:13px;background:#19364a;color:var(--cyan);display:grid;place-items:center;font-size:21px}.split{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}.feature-panel{background:linear-gradient(145deg,#142943,#0d1728);border:1px solid var(--line);border-radius:24px;padding:26px;box-shadow:var(--glow)}.permission{display:flex;align-items:center;justify-content:space-between;padding:14px 0;border-bottom:1px solid var(--line)}.permission:last-child{border:0}.permission small{display:block;color:var(--muted)}.toggle{width:45px;height:25px;border-radius:30px;background:#35445a;border:0;padding:3px;transition:.2s}.toggle:after{content:"";display:block;width:19px;height:19px;background:#dce7f6;border-radius:50%;transition:.2s}.toggle[aria-pressed=true]{background:#208b91}.toggle[aria-pressed=true]:after{transform:translateX(20px);background:white}.notice{font-size:12px;color:#a9bfd5;background:#0b1727;border:1px solid var(--line);border-radius:12px;padding:12px;margin-top:14px}.sim-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.sim-choice{padding:16px;border:1px solid var(--line);background:#101d30;border-radius:14px;color:var(--ink);text-align:left}.sim-choice:hover,.sim-choice.selected{border-color:var(--cyan);background:#153044}.sim-choice span{display:block;color:var(--muted);font-size:12px;margin-top:5px}.result{margin-top:15px;padding:17px;border-radius:15px;background:#0b1928;border:1px solid #58e1e844;display:none}.result.show{display:block}.result strong{color:var(--cyan)}.quizbox{max-width:760px;background:linear-gradient(145deg,#14243b,#0d1728);border:1px solid var(--line);border-radius:24px;padding:26px}.quiztop{display:flex;justify-content:space-between;color:var(--muted);font-size:12px}.progress{height:5px;background:#29394f;border-radius:8px;margin:15px 0 24px;overflow:hidden}.progress span{height:100%;display:block;background:linear-gradient(90deg,var(--cyan),var(--blue));width:0;transition:.3s}.answers{display:grid;gap:10px;margin-top:20px}.answer{padding:14px 16px;text-align:left;border:1px solid var(--line);background:#101d30;border-radius:12px;color:var(--ink)}.answer:hover{border-color:var(--cyan)}.answer.correct{border-color:#48d6a1;background:#10352f}.answer.wrong{border-color:#ff9c9c}.quizfeedback{min-height:28px;color:var(--muted);font-size:13px;margin-top:12px}.tips{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.tip{padding:17px;border:1px solid var(--line);border-radius:15px;background:#101b2d}.tip b{display:block;margin-bottom:4px}.tip span{font-size:13px;color:var(--muted)}.footer{padding:35px 0 45px;border-top:1px solid var(--line);color:#8293aa;font-size:12px}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.modalback{position:fixed;inset:0;background:#020611cc;display:none;place-items:center;padding:20px;z-index:20}.modalback.open{display:grid}.modal{max-width:560px;width:100%;padding:27px;border-radius:22px;background:#111e32;border:1px solid #58e1e866;box-shadow:0 20px 80px #0009}.modal h2{margin-top:0}.modal label{display:block;color:#b8c8dc;font-size:13px;margin:14px 0 6px}.modal input,.modal select{width:100%;padding:12px;border-radius:10px;border:1px solid var(--line);background:#091322;color:var(--ink)}.close{float:right;border:0;background:transparent;color:var(--muted);font-size:24px}.report{padding:16px;border-radius:14px;background:#091626;margin-top:15px;display:none}.report.show{display:block}.score{font-size:40px;font-weight:850;color:var(--cyan)}@media(max-width:850px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding:65px 0 45px}.visual{height:360px}.orbit.one{width:310px;height:310px}.orbit.two{width:245px;height:245px}.grid{grid-template-columns:repeat(2,1fr)}.split{grid-template-columns:1fr}}@media(max-width:560px){.wrap{width:min(100% - 28px,1160px)}.nav{height:65px}.nav-cta{padding:9px 12px;font-size:12px}.hero{min-height:0;padding:55px 0 60px}.hero p{font-size:15px}.visual{height:310px}.orbit.one{width:270px;height:270px}.orbit.two{width:210px;height:210px}.core{width:150px;height:150px}.core svg{width:80px}.float{font-size:10px;padding:8px 10px}.f1{top:15px}.f2{top:60px}.f3{bottom:35px}.f4{bottom:15px}.section{padding:65px 0}.grid{grid-template-columns:1fr}.sim-grid,.tips{grid-template-columns:1fr}.quizbox{padding:19px}.section h2{font-size:34px}}
+
+/* Exhibition upgrade pack */
+.lab-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.lab-card{background:linear-gradient(145deg,rgba(20,36,59,.96),rgba(10,19,33,.96));border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:var(--glow)}
+.lab-card h3{margin:8px 0}.lab-card p{color:var(--muted);font-size:13px}
+.field{display:grid;gap:6px;margin:13px 0}.field label{font-size:12px;color:#b8c8dc}.field select{width:100%;padding:12px;border-radius:11px;background:#091322;color:var(--ink);border:1px solid var(--line)}
+.twin-result{display:none;margin-top:16px;padding:18px;border-radius:16px;background:#091626;border:1px solid #58e1e855}.twin-result.show{display:block}
+.twin-tags{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0}.twin-tags span{font-size:11px;padding:6px 9px;border-radius:30px;background:#18354a;color:#bffaff}
+.cookie-demo{border:1px solid #7890ac55;border-radius:18px;padding:20px;background:#0b1525;position:relative;overflow:hidden}
+.cookie-demo:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 90% 0%,#284e7044,transparent 45%);pointer-events:none}
+.cookie-demo>*{position:relative}.cookie-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:15px}.cookie-actions button{font-size:12px;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:#17263b;color:var(--ink)}.cookie-actions .accept{background:linear-gradient(120deg,#61e6e5,#8ea9ff);color:#08121f;border:0}
+.cookie-outcome{display:none;padding:13px;border-radius:12px;background:#10283a;color:#c5eaf0;margin-top:14px;font-size:13px}.cookie-outcome.show{display:block}
+.flowline{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:24px}
+.flowstep{padding:17px 12px;border:1px solid var(--line);border-radius:15px;background:#101d30;text-align:center;position:relative;opacity:.48;transition:.35s}
+.flowstep.active{opacity:1;border-color:var(--cyan);box-shadow:0 0 24px #58e1e822;transform:translateY(-3px)}
+.flowstep .flowicon{font-size:25px;display:block;margin-bottom:8px}.flowstep b{font-size:12px;display:block}.flowstep small{color:var(--muted);font-size:10px}
+.flow-controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:18px}
+.detective-post{border:1px solid var(--line);border-radius:18px;background:#101b2c;padding:20px}
+.fake-profile{display:flex;gap:12px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:14px}.avatar{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#57dfe4,#899cff);color:#07111d;font-weight:900}
+.post-photo{margin:14px 0;padding:22px;border-radius:13px;background:linear-gradient(135deg,#1d4050,#293451);font-size:34px;text-align:center}
+.clue-list{display:grid;gap:9px;margin-top:15px}.clue{display:flex;gap:10px;align-items:flex-start;text-align:left;border:1px solid var(--line);background:#0c1828;color:var(--ink);border-radius:12px;padding:12px;font-size:12px}.clue input{accent-color:#58e1e8;margin-top:3px}.detective-result{display:none;margin-top:14px;padding:13px;border-radius:12px;background:#10283a;color:#c5eaf0;font-size:13px}.detective-result.show{display:block}
+.achievement{display:none;border:1px solid #58e1e877;border-radius:20px;padding:22px;background:radial-gradient(circle at top right,#1b526055,transparent 55%),#0d1b2d;text-align:center;margin-top:18px}.achievement.show{display:block}.achievement .medal{font-size:42px}.achievement h3{color:var(--cyan);margin:5px}
+@media(max-width:700px){.lab-grid{grid-template-columns:1fr}.flowline{grid-template-columns:repeat(2,1fr)}}
+@media print{body{background:white;color:#111}.nav,.hero,.section,.footer,.modalback{display:none!important}.achievement{display:block!important;color:#111;background:white;border:2px solid #222}.achievement p{color:#333}}
+
+</style>
+</head>
+<body>
+<header class="wrap nav">
+  <a class="brand" href="#"><span class="brand-mark">B</span><span>BEHIND YOUR SCREEN</span></a>
+  <nav class="navlinks"><a href="#footprint">Digital footprint</a><a href="#data">Your data</a><a href="#digital-twin">Digital twin</a><a href="#reality">Reality check</a><a href="#protect">Protect yourself</a></nav>
+  <a class="nav-cta" href="#reality">Explore the experience ↗</a>
+</header>
+<main>
+<section class="wrap hero">
+  <div>
+    <div class="eyebrow"><span class="dot"></span> Privacy in the digital age</div>
+    <h1>Your life is online.<br><span class="gradient">Who sees it?</span></h1>
+    <p>Every search, swipe and share leaves a trace. Discover what your digital habits can reveal, how personal data travels, and how to take back control.</p>
+    <div class="actions"><a class="btn primary" href="#footprint">Explore your digital self ↗</a><a class="btn" href="#protect">Learn to protect yourself</a></div>
+    <div class="micro">A privacy-awareness experience · No real personal data is collected</div>
+  </div>
+  <div class="visual" aria-label="Abstract glowing digital identity illustration">
+    <div class="orbit one"></div><div class="orbit two"></div>
+    <div class="core"><svg viewBox="0 0 100 100" fill="none"><path d="M50 9 81 21v24c0 22-13 37-31 46C32 82 19 67 19 45V21L50 9Z" stroke="#72F0F0" stroke-width="3"/><path d="M35 49c0-10 7-17 15-17s15 7 15 17-7 18-15 18-15-8-15-18Z" stroke="#72F0F0" stroke-width="2.5"/><path d="M42 48c0-5 3-8 8-8m8 8c0 5-3 9-8 9" stroke="#72F0F0" stroke-width="2" stroke-linecap="round"/></svg></div>
+    <div class="float f1"><b>01 / SEARCH</b>Your interests</div><div class="float f2"><b>02 / LOCATION</b>Your movements</div><div class="float f3"><b>03 / SOCIAL</b>Your connections</div><div class="float f4"><b>04 / SHOPPING</b>Your preferences</div>
+  </div>
+</section>
+<section class="section" id="footprint"><div class="wrap">
+  <div class="section-head"><div class="kicker">01 — The trail you leave</div><h2>Your digital footprint is bigger than you think.</h2><p>A digital footprint is the trail of information created by your online activity. Some traces are shared intentionally; others are generated as you use digital services.</p></div>
+  <div class="grid">
+    <article class="card"><div class="iconbox">⌕</div><div class="num">ACTIVE FOOTPRINT</div><h3>What you choose to share</h3><p>Posts, comments, photos, reviews and profile details you deliberately publish online.</p></article>
+    <article class="card"><div class="iconbox">◉</div><div class="num">PASSIVE FOOTPRINT</div><h3>What gets generated</h3><p>Browsing activity, device information, approximate location and usage patterns collected by services.</p></article>
+    <article class="card"><div class="iconbox">⌁</div><div class="num">CONNECTED DATA</div><h3>Small clues add up</h3><p>Separate pieces of information can be combined to infer interests, routines or preferences.</p></article>
+  </div>
+</div></section>
+<section class="section" id="data"><div class="wrap split">
+  <div><div class="kicker">02 — Permission check</div><h2>What are you giving away?</h2><p class="muted">Explore common app permissions. Switch them on to see what access an app may receive. This is a local educational simulation—nothing is requested from your device.</p><div class="notice">A permission should match the app's purpose. You can review or change permissions in your device settings.</div></div>
+  <div class="feature-panel">
+    <div class="permission"><div><b>📍 Location</b><small>May reveal where a device is or has been</small></div><button class="toggle" aria-pressed="false" data-perm="Location" aria-label="Toggle location permission"></button></div>
+    <div class="permission"><div><b>🎙 Microphone</b><small>Allows audio input when actively used</small></div><button class="toggle" aria-pressed="false" data-perm="Microphone" aria-label="Toggle microphone permission"></button></div>
+    <div class="permission"><div><b>📷 Camera</b><small>Allows photo or video capture within the app</small></div><button class="toggle" aria-pressed="false" data-perm="Camera" aria-label="Toggle camera permission"></button></div>
+    <div class="permission"><div><b>👥 Contacts</b><small>May expose saved contact information</small></div><button class="toggle" aria-pressed="false" data-perm="Contacts" aria-label="Toggle contacts permission"></button></div>
+    <div class="notice" id="permissionNote" aria-live="polite">No permissions selected. Try switching one on to explore its possible implications.</div>
+  </div>
+</div></section>
+<section class="section"><div class="wrap split">
+  <div><div class="kicker">03 — Behind the recommendation</div><h2>How does an ad seem to know you?</h2><p class="muted">Many digital services use signals such as pages viewed, searches, clicks or broad interests to personalise recommendations and advertising. This mini-experiment shows how signals can shape an inferred interest.</p></div>
+  <div class="feature-panel"><b>Choose a few things you recently explored</b><p class="muted" style="font-size:12px;margin-top:4px">Fictional examples—don't enter private details.</p>
+    <div class="sim-grid" id="interestChoices">
+      <button class="sim-choice" data-interest="Travel">✈️ Travel<span>Trips and destinations</span></button><button class="sim-choice" data-interest="Technology">💻 Technology<span>Devices and gadgets</span></button><button class="sim-choice" data-interest="Fitness">🏃 Fitness<span>Health and activity</span></button><button class="sim-choice" data-interest="Food">🍜 Food<span>Recipes and restaurants</span></button>
+    </div>
+    <div class="result" id="adResult" aria-live="polite"></div>
+  </div>
+</div></section>
+<section class="section" id="reality"><div class="wrap">
+  <div class="section-head"><div class="kicker">04 — Privacy reality check</div><h2>Pause before you tap.</h2><p>Test your instincts with everyday digital situations. Choose the safest response.</p></div>
+  <div class="quizbox"><div class="quiztop"><span id="quizCount">QUESTION 1 OF 4</span><span id="quizScore">SCORE: 0</span></div><div class="progress"><span id="quizProgress"></span></div><h3 id="quizQuestion">A new app asks for access to your contacts, even though it is a simple calculator. What should you do?</h3><div class="answers" id="quizAnswers"></div><div class="quizfeedback" id="quizFeedback" aria-live="polite"></div><button class="btn" id="nextQuestion" style="display:none;margin-top:10px">Next question →</button></div>
+</div></section>
+
+<section class="section" id="digital-twin"><div class="wrap">
+  <div class="section-head"><div class="kicker">04 — The digital twin experiment</div><h2>A few clues. A surprisingly detailed picture.</h2><p>Choose fictional examples of everyday online behaviour. See what a service might infer when separate signals are combined. This is a learning simulation, not a real profile of you.</p></div>
+  <div class="lab-grid">
+    <div class="lab-card">
+      <div class="iconbox">◈</div><h3>Build a fictional digital profile</h3><p>Pick the options that best describe this imaginary internet user.</p>
+      <div class="field"><label for="twinSearch">What do they often search for?</label><select id="twinSearch"><option value="technology and gadgets">Technology and gadgets</option><option value="travel and destinations">Travel and destinations</option><option value="food and restaurants">Food and restaurants</option><option value="fitness and sport">Fitness and sport</option></select></div>
+      <div class="field"><label for="twinSocial">What do they share most?</label><select id="twinSocial"><option value="photos and social updates">Photos and social updates</option><option value="reviews and recommendations">Reviews and recommendations</option><option value="hobbies and interests">Hobbies and interests</option><option value="very little publicly">Very little publicly</option></select></div>
+      <div class="field"><label for="twinLocation">How often do they share location?</label><select id="twinLocation"><option value="frequently">Frequently</option><option value="only while using maps">Only while using maps</option><option value="rarely or never">Rarely or never</option></select></div>
+      <button class="btn primary" id="buildTwin">Reveal the possible digital twin ↗</button>
+    </div>
+    <div class="lab-card">
+      <div class="kicker">Illustrative profile preview</div><div class="twin-result" id="twinResult" aria-live="polite">
+        <div class="score" style="font-size:28px">Digital clues connected</div><h3 id="twinHeadline">A pattern is taking shape</h3><p id="twinDescription"></p><div class="twin-tags" id="twinTags"></div><div class="notice">Important: These are possibilities, not guaranteed facts. Data-based inferences can be incomplete or wrong.</div>
+      </div>
+      <div id="twinPlaceholder" class="notice" style="margin-top:18px">Your fictional profile will appear here after you make your choices.</div>
+    </div>
+  </div>
+</div></section>
+<section class="section" id="cookie-trap"><div class="wrap split">
+  <div><div class="kicker">05 — The cookie trap</div><h2>Three buttons. Three very different choices.</h2><p class="muted">Cookie banners can make privacy decisions confusing. Try this fictional consent screen and compare the choices. Essential cookies may support basic site functions; optional cookies can be used for analytics or personalisation.</p><div class="notice">This demo does not set cookies or save your choice. It only explains the options.</div></div>
+  <div class="cookie-demo">
+    <div class="kicker">Example website · Privacy choices</div><h3 style="margin:8px 0">Your experience, your choice.</h3><p style="font-size:13px;color:#b7c8dc">We use essential technologies to run this demo. With your permission, optional cookies could help measure usage or personalise content.</p>
+    <div class="cookie-actions"><button class="accept" data-cookie="accept">Accept all</button><button data-cookie="reject">Reject optional</button><button data-cookie="custom">Customize</button></div>
+    <div class="cookie-outcome" id="cookieOutcome" aria-live="polite"></div>
+  </div>
+</div></section>
+<section class="section" id="data-journey"><div class="wrap">
+  <div class="section-head"><div class="kicker">06 — Follow the data</div><h2>Where can your data travel?</h2><p>Follow a simplified example of how information from an online shopping visit may be processed. Actual data flows vary by service, settings and applicable privacy rules.</p></div>
+  <div class="feature-panel">
+    <div class="flowline" id="dataFlow">
+      <div class="flowstep active"><span class="flowicon">📱</span><b>YOU</b><small>Browse a product</small></div>
+      <div class="flowstep"><span class="flowicon">🛍️</span><b>APP / WEBSITE</b><small>Records activity</small></div>
+      <div class="flowstep"><span class="flowicon">📊</span><b>ANALYTICS</b><small>Measures patterns</small></div>
+      <div class="flowstep"><span class="flowicon">✨</span><b>PERSONALISED</b><small>May tailor suggestions</small></div>
+    </div>
+    <div class="flow-controls"><button class="btn primary" id="flowNext">Follow the data →</button><span class="muted" id="flowCaption" style="font-size:12px">Step 1: An online action creates a data signal.</span></div>
+  </div>
+</div></section>
+<section class="section" id="oversharing"><div class="wrap split">
+  <div><div class="kicker">07 — The oversharing detective</div><h2>Can you spot the privacy clues?</h2><p class="muted">Meet Alex, a fictional student. Examine this made-up social post and select the details that could reveal more than intended.</p><div class="notice">All names, locations and details are fictional. No real person's profile is used.</div></div>
+  <div class="detective-post">
+    <div class="fake-profile"><div class="avatar">A</div><div><b>Alex R. · Fictional profile</b><div class="muted" style="font-size:11px">Public post · Example only</div></div></div>
+    <div class="post-photo">🎒 🌅 ☕</div>
+    <p style="font-size:13px;color:#d5e0ef">“Early train from Central Station at 6:15 tomorrow! Back Sunday night. Leaving my apartment keys with the neighbour. Can't wait for the tournament!”</p>
+    <b style="font-size:13px">Which details could create privacy risks?</b>
+    <div class="clue-list">
+      <label class="clue"><input type="checkbox" value="travel"> Exact travel time and station</label>
+      <label class="clue"><input type="checkbox" value="absence"> Mention of being away until Sunday</label>
+      <label class="clue"><input type="checkbox" value="keys"> Detail about where keys are left</label>
+      <label class="clue"><input type="checkbox" value="emoji"> The coffee emoji by itself</label>
+    </div>
+    <button class="btn primary" id="checkClues" style="margin-top:14px">Check my detective skills</button>
+    <div class="detective-result" id="detectiveResult" aria-live="polite"></div>
+  </div>
+</div></section>
+
+<section class="section" id="protect"><div class="wrap">
+  <div class="section-head"><div class="kicker">05 — Take back control</div><h2>Privacy is a practice, not a one-time setting.</h2><p>Small habits can make a meaningful difference. Start with these practical steps.</p></div>
+  <div class="tips">
+    <div class="tip"><b>01 · Review app permissions</b><span>Allow only the access an app genuinely needs. Revisit permissions regularly.</span></div>
+    <div class="tip"><b>02 · Use strong, unique passwords</b><span>Use a password manager and avoid reusing the same password across services.</span></div>
+    <div class="tip"><b>03 · Turn on two-factor authentication</b><span>Add another layer of protection to important accounts wherever available.</span></div>
+    <div class="tip"><b>04 · Think before sharing</b><span>Check who can see a post and whether it reveals identifying details or routines.</span></div>
+    <div class="tip"><b>05 · Check privacy settings</b><span>Review profile visibility, ad preferences, location history and account activity.</span></div>
+    <div class="tip"><b>06 · Keep devices updated</b><span>Install trusted updates to receive security fixes and improvements.</span></div>
+  </div>
+  <div class="feature-panel" style="margin-top:24px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap"><div><div class="kicker">Your personal takeaway</div><h3 style="margin:7px 0">Build your Privacy Action Card</h3><p class="muted" style="margin:0;font-size:13px">Create a simple checklist based on the habits you want to improve.</p></div><button class="btn primary" id="openMirror">Create my action card ↗</button></div>
+</div></section>
+</main>
+<footer class="footer"><div class="wrap footer-inner"><div><b style="color:#dceaff;letter-spacing:.08em">BEHIND YOUR SCREEN</b><div>Privacy in the Digital Age · An educational exhibition experience</div></div><div>Learn what you share. Choose what you reveal. Protect what matters.</div></div></footer>
+<div class="modalback" id="mirrorModal"><div class="modal"><button class="close" id="closeMirror" aria-label="Close">×</button><div class="kicker">Privacy mirror · Local demo</div><h2>Your next privacy moves</h2><p class="muted">Choose habits you want to work on. Your selections stay in this page and are not sent anywhere.</p>
+<label for="habit1">A setting I want to review</label><select id="habit1"><option>App permissions</option><option>Social media visibility</option><option>Location sharing</option><option>Ad personalisation</option></select>
+<label for="habit2">A habit I want to improve</label><select id="habit2"><option>Use unique passwords</option><option>Enable two-factor authentication</option><option>Think before posting</option><option>Check links before opening</option></select>
+<button class="btn primary" id="makeReport" style="margin-top:18px;width:100%">Generate my action card</button>
+<div class="report" id="report"><div class="score">2 actions</div><b>Your privacy action card</b><p id="reportText" class="muted"></p><button class="btn" id="printReport">Print / Save this card</button></div>
+</div></div>
+
+<div class="wrap" style="padding-bottom:65px">
+  <div class="feature-panel" style="text-align:center">
+    <div class="kicker">08 — Your exhibition achievement</div>
+    <h2 style="font-size:30px">Ready to become a Privacy Champion?</h2>
+    <p class="muted">Explore the experiences, create an action card and claim your demo achievement.</p>
+    <button class="btn primary" id="claimBadge">Unlock my Privacy Champion badge</button>
+    <div class="achievement" id="achievement">
+      <div class="medal">🏅</div><div class="kicker">BEHIND YOUR SCREEN · DIGITAL EXHIBITION</div>
+      <h3>PRIVACY CHAMPION</h3><p>You explored digital footprints, data choices and practical privacy habits.</p>
+      <p style="font-size:11px;color:#9aabc2">Educational participation badge · Not a formal certification</p>
+      <button class="btn" id="printBadge">Print / Save badge</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const toggles=[...document.querySelectorAll('.toggle')];
+toggles.forEach(t=>t.addEventListener('click',()=>{const on=t.getAttribute('aria-pressed')!=='true';t.setAttribute('aria-pressed',String(on));const active=toggles.filter(x=>x.getAttribute('aria-pressed')==='true').map(x=>x.dataset.perm);document.getElementById('permissionNote').textContent=active.length?`Selected: ${active.join(', ')}. Consider whether this access is necessary for the app's main function, and review it in your device settings.`:'No permissions selected. Try switching one on to explore its possible implications.';}));
+const selected=new Set();document.querySelectorAll('.sim-choice').forEach(b=>b.addEventListener('click',()=>{const k=b.dataset.interest;if(selected.has(k)){selected.delete(k);b.classList.remove('selected')}else{selected.add(k);b.classList.add('selected')}const out=document.getElementById('adResult');if(!selected.size){out.classList.remove('show');return}out.classList.add('show');out.innerHTML=`<strong>Possible inferred interests</strong><p style="margin:6px 0 0;color:#b6c7dc">Based on your selected examples, a service might infer interest in <b>${[...selected].join(', ')}</b> and use those signals to personalise recommendations. This is illustrative, not a real profile.</p>`;}));
+const questions=[
+{q:"A calculator app asks for access to your contacts. What should you do?",a:["Allow it so the app works faster","Deny it unless there is a clear need","Share all permissions just in case"],c:1,e:"A calculator normally does not need contacts. Deny unnecessary access and review permissions."},
+{q:"A social post shows your boarding pass and travel dates. What is the safer choice?",a:["Post it publicly","Share it with everyone","Avoid posting identifying travel details"],c:2,e:"Travel documents and dates can reveal sensitive information. Keep them private."},
+{q:"A website offers a discount if you accept every cookie. What should you do?",a:["Review the choices and reject optional cookies if you prefer","Always accept everything","Enter extra personal details"],c:0,e:"Where options are available, review them and choose only what you are comfortable with."},
+{q:"You receive a message asking you to sign in through an unfamiliar link. What is safest?",a:["Open it immediately","Check through the official app or website instead","Forward it to friends"],c:1,e:"Avoid signing in through unexpected links. Navigate to the official service yourself."}
+];let qi=0,score=0,answered=false;
+function renderQuiz(){const q=questions[qi];document.getElementById('quizCount').textContent=`QUESTION ${qi+1} OF ${questions.length}`;document.getElementById('quizScore').textContent=`SCORE: ${score}`;document.getElementById('quizProgress').style.width=`${qi/questions.length*100}%`;document.getElementById('quizQuestion').textContent=q.q;document.getElementById('quizFeedback').textContent='';document.getElementById('nextQuestion').style.display='none';answered=false;const box=document.getElementById('quizAnswers');box.innerHTML='';q.a.forEach((v,i)=>{const b=document.createElement('button');b.className='answer';b.textContent=v;b.addEventListener('click',()=>choose(i,b));box.appendChild(b)});}
+function choose(i,btn){if(answered)return;answered=true;const q=questions[qi];const all=[...document.querySelectorAll('.answer')];all[q.c].classList.add('correct');if(i===q.c)score++;else btn.classList.add('wrong');document.getElementById('quizScore').textContent=`SCORE: ${score}`;document.getElementById('quizFeedback').textContent=q.e;document.getElementById('nextQuestion').style.display='inline-block';document.getElementById('nextQuestion').textContent=qi===questions.length-1?'See my result ↗':'Next question →';document.getElementById('quizProgress').style.width=`${(qi+1)/questions.length*100}%`;}
+document.getElementById('nextQuestion').addEventListener('click',()=>{if(qi<questions.length-1){qi++;renderQuiz()}else{document.getElementById('quizQuestion').textContent=`You scored ${score} out of ${questions.length}.`;document.getElementById('quizAnswers').innerHTML='<p class="muted">Keep learning: privacy choices are part of everyday digital life.</p>';document.getElementById('quizFeedback').textContent='Explore the protection tips below to build safer habits.';document.getElementById('nextQuestion').style.display='none';document.getElementById('quizProgress').style.width='100%';}});
+renderQuiz();
+const modal=document.getElementById('mirrorModal');document.getElementById('openMirror').onclick=()=>modal.classList.add('open');document.getElementById('closeMirror').onclick=()=>modal.classList.remove('open');modal.addEventListener('click',e=>{if(e.target===modal)modal.classList.remove('open')});
+document.getElementById('makeReport').onclick=()=>{const a=document.getElementById('habit1').value,b=document.getElementById('habit2').value;document.getElementById('reportText').textContent=`1. Review: ${a}. 2. Build the habit: ${b}. Make time this week to put both steps into practice.`;document.getElementById('report').classList.add('show')};document.getElementById('printReport').onclick=()=>window.print();
+
+// Digital Twin: a fictional inference demonstration.
+document.getElementById('buildTwin').addEventListener('click',()=>{
+ const search=document.getElementById('twinSearch').value,social=document.getElementById('twinSocial').value,loc=document.getElementById('twinLocation').value;
+ const result=document.getElementById('twinResult');document.getElementById('twinPlaceholder').style.display='none';result.classList.add('show');
+ document.getElementById('twinHeadline').textContent='A possible interest profile';
+ document.getElementById('twinDescription').textContent=`A service analysing these example signals might infer an interest in ${search}, notice a pattern of ${social}, and learn that location sharing happens ${loc}. Combining signals can create a more detailed picture than any one signal alone.`;
+ document.getElementById('twinTags').innerHTML='';[search,social,`Location: ${loc}`].forEach(x=>{const s=document.createElement('span');s.textContent=x;document.getElementById('twinTags').appendChild(s)});
+});
+document.querySelectorAll('[data-cookie]').forEach(b=>b.addEventListener('click',()=>{
+ const out=document.getElementById('cookieOutcome');out.classList.add('show');
+ const messages={accept:'You chose to allow optional categories as well as essential functions. On a real site, check what each category covers and who may receive the data.',reject:'You chose to keep optional categories off. Essential technologies may still operate the site. This is a valid privacy choice where offered.',custom:'A good next step would be to open category-level controls, keep essential functions enabled and decide separately about analytics or personalisation.'};
+ out.textContent=messages[b.dataset.cookie];
+}));
+let flowStep=0;const flowCaptions=['Step 1: An online action creates a data signal.','Step 2: The service may record information needed to provide or improve the experience.','Step 3: Analytics tools may help understand broad usage patterns.','Step 4: Some services may use signals to tailor recommendations or advertising.'];
+document.getElementById('flowNext').addEventListener('click',()=>{flowStep=(flowStep+1)%4;document.querySelectorAll('.flowstep').forEach((x,i)=>x.classList.toggle('active',i<=flowStep));document.getElementById('flowCaption').textContent=flowCaptions[flowStep];document.getElementById('flowNext').textContent=flowStep===3?'Replay journey ↻':'Follow the data →';});
+document.getElementById('checkClues').addEventListener('click',()=>{
+ const chosen=[...document.querySelectorAll('.clue input:checked')].map(x=>x.value),correct=['travel','absence','keys'],hits=chosen.filter(x=>correct.includes(x)).length,missed=correct.filter(x=>!chosen.includes(x)).length;
+ const out=document.getElementById('detectiveResult');out.classList.add('show');
+ out.textContent=`You identified ${hits} of 3 risk-related clues${missed?`, and missed ${missed}`:''}. Exact travel details, being away from home, and information about keys can expose routines or security-sensitive details. A coffee emoji alone is not the concern.`;
+});
+document.getElementById('claimBadge').addEventListener('click',()=>document.getElementById('achievement').classList.add('show'));
+document.getElementById('printBadge').addEventListener('click',()=>window.print());
+
+</script>
+</body></html>
